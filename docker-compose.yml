@@ -1,0 +1,11 @@
+services:
+  red-ant:
+    build:
+      context: .
+    image: red-ant:latest
+    container_name: red-ant
+    env_file:
+      - .env
+    ports:
+      - 7666:7666
+  
