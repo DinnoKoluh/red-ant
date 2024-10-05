@@ -7,4 +7,4 @@ router = APIRouter(
 
 @router.get("/healthcheck")
 async def healthcheck() -> Response:
-    return Response(status_code=status.HTTP_200_OK)
+    return Response(content="Server alive", status_code=status.HTTP_200_OK)
